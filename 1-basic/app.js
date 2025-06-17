@@ -252,65 +252,179 @@
 // console.log("x",x);
 // console.log("y",y);
 
-const name = "Mg Mg";
-const age = 15;
-const township = "kyauk myaung";
-let money = 200;
-const orangePrice = 50;
-money = money - orangePrice;
-console.log(money);
+// const name = "Mg Mg";
+// const age = 15;
+// const township = "kyauk myaung";
+// let money = 200;
+// const orangePrice = 50;
+// money = money - orangePrice;
+// console.log(money);
 
-const bag = ["mm", "eng", "bio"];
-const pen = null;
-const canSmokeMgMg = false;
-const canSmokeMgMgFriend = true;
+// const bag = ["mm", "eng", "bio"];
+// const pen = null;
+// const canSmokeMgMg = false;
+// const canSmokeMgMgFriend = true;
 
-const student1 = {
-    name,
-    age,
-    gender: "male",
-    money,
-    canSmokeMgMg,
-    bag
-}
+// const student1 = {
+//     name,
+//     age,
+//     gender: "male",
+//     money,
+//     canSmokeMgMg,
+//     bag
+// }
 
 // console.log(mgmgInfo);
 // console.log(mgmgInfo.name);
 // console.log(mgmgInfo.bag[1]);
 
-const student2 = {
-    name: "Kyaw Kyaw",
-    age: 16,
-    gender: "male",
-}
+// const student2 = {
+//     name: "Kyaw Kyaw",
+//     age: 16,
+//     gender: "male",
+// }
 
 
-const student3 = {
-    name: "zaw zaw",
-    age: 15,
-    gender: "male",
+// const student3 = {
+//     name: "zaw zaw",
+//     age: 15,
+//     gender: "male",
 
-}
+// }
 
-const student4 = {
-    name: "mya mya",
-    age: 16,
-    gender: "female",
-}
+// const student4 = {
+//     name: "mya mya",
+//     age: 16,
+//     gender: "female",
+// }
 
-const students = [student1,student2,student3,student4];
+// const students = [student1,student2,student3,student4];
 
-console.log(students);
-console.log(students[1].age);
-console.log(students[1]["age"]);
-console.log(students[0]["bag"][2]);
-console.log(students[0].bag[2]);
-
-
+// console.log(students);
+// console.log(students[1].age);
+// console.log(students[1]["age"]);
+// console.log(students[0]["bag"][2]);
+// console.log(students[0].bag[2]);
 
 
+// const x = 2;
+// const y = 3;
+
+
+// console.log(x+y);
+// console.log(x-y);
+// console.log(x*y);
+// console.log(x/y);
+// console.log(x**y);
+// console.log(23%7);
+
+// let x = 5;
+
+// console.log(x);
+// console.log(x--);
+// console.log(x);
+
+
+// let x;
+// console.log(x);
+
+// x = 5;
+
+// console.log(x);
+
+// x = 7;
+
+// console.log(x);
+
+
+// let x = 5;
+// console.log(x);
+
+// // 7
+// // x = x + 2;
+// // x += 2
+// // console.log(x);
+
+// x -= 2
+
+// console.log(x);
+
+// const firstName = "Hein";
+// const lastName = "Htet";
+
+// console.log(firstName-lastName);
+// console.log(firstName+lastName);
+// console.log(firstName+" "+lastName);
+
+
+// const weight = 101;
+// const unit = "kg";
+
+// console.log(unit+weight);
+
+// const x = "5";
+// const y = "3";
+
+// console.log(x - y);
 
 
 
+// console.log(5 > 10);
+// console.log(5 < 10);
 
 
+
+// const x = 5;
+// const y = "5";
+// const z = 7;
+
+// console.log(x >= 5);
+// console.log(x < 5);
+// console.log(x == 10);
+
+// console.log(x == y);
+// console.log(x === y);
+
+
+// console.log(x == z);
+// console.log(x != z);
+
+
+// console.log(true ? "it is true" : "it is false");
+// console.log(false ? "it is true" : "it is false");
+
+// const finishDinner = false;
+
+// console.log(finishDinner ? "sar pee p" : "ma sar ya tay buu");
+
+
+// const examMark = 55;
+// const viberMark = 40;
+
+// console.log( examMark >= 60 && viberMark > 60 ? "passed" : "fail");
+
+// const age = 68;
+// const nationality = false;
+
+// console.log(age >= 18 && nationality === true ? "U can vote" : "U can't vote");
+
+// const busNumber = 65;
+
+// console.log(busNumber === 20 || busNumber === 65 ? "U can get MMS IT " : "U will not");
+
+// console.log(!!!true);
+
+console.log(true ? "It's True" : "It's false");
+console.log({} ? "It's True" : "It's false");
+console.log([] ? "It's True" : "It's false");
+console.log(2 ? "It's True" : "It's false");
+console.log(1 ? "It's True" : "It's false");
+console.log(0 ? "It's True" : "It's false");
+console.log(-1 ? "It's True" : "It's false");
+console.log("" ? "It's True" : "It's false");
+console.log("a" ? "It's True" : "It's false");
+console.log(" " ? "It's True" : "It's false");
+console.log("abc" ? "It's True" : "It's false");
+console.log(null ? "It's True" : "It's false");
+console.log(undefined ? "It's True" : "It's false");
+console.log(NaN ? "It's True" : "It's false");
