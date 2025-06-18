@@ -1,20 +1,14 @@
-
-
-
 // let x; // declare variable x
 // let y;
 
 // x = 5; // value assign to variable
 // y = 6;
 
-
 // console.log(x); // access variable
 // console.log(y);
 
 // console.log(x + y)
 // console.log(x * y)
-
-
 
 // let x = 5;
 // let y = 2 + x; // 7
@@ -33,12 +27,10 @@
 
 // console.log(money)
 
-
 // HTML Version 5
 // CSS Version 3
 // Tailwind Version 4
 // JavaScript Version ES6
-
 
 // const ?
 
@@ -49,7 +41,6 @@
 // daysInAWeek = 10;
 
 // console.log(daysInAWeek)
-
 
 // Naming Convention
 
@@ -67,14 +58,11 @@
 // let $x = 15;
 // let _x = 15;
 
-
 // es 5
 // let myName = "hein htet zan";
 // let myWeight = '101kg'
 // // let myAge = 18;
 // let birthYear = 1994;
-
-
 
 // // es 6
 // let intro = `My name is ${myName} and I'm ${ 2025 - birthYear } years old`;
@@ -85,7 +73,6 @@
 // console.log('My phone screen is 6" and OLED ')
 // console.log('My ipad screen is 12\' 9" and OLED ')
 // console.log(`My phone screen is 6" and OLED`)
-
 
 // let myAge = 31;
 // let howTallIAm = 132;
@@ -99,7 +86,6 @@
 // console.log(typeof -10)
 // console.log(typeof 101.5)
 
-
 // let x = null;
 
 // console.log(x)
@@ -112,7 +98,6 @@
 
 // console.log(z)
 
-
 // let lunchBox = ["rice","curry","soup","fruit"];
 
 // // console.log(typeof arr)
@@ -120,7 +105,6 @@
 // console.log(lunchBox)
 // console.log(lunchBox[0])
 // console.log(lunchBox[1])
-
 
 // const marks = [50,60,65,80,80,55];
 // console.log(marks)
@@ -150,7 +134,6 @@
 
 // console.log(fruits)
 
-
 // let myself = {
 //     myName: "hein htet zan",
 //     myAge: 18,
@@ -167,7 +150,6 @@
 // console.log(myself.myName)
 // console.log(`My name is ${myself.myName} and ${myself.myAge} years old, currently live in ${myself.location}. Work as ${myself.job}`)
 
-
 // let marks = {
 //     mm: 50,
 //     eng: 65,
@@ -183,7 +165,6 @@
 
 // console.log(marks)
 
-
 // let obj = {};
 
 // obj.a = "aaa";
@@ -196,10 +177,8 @@
 
 // console.log(obj)
 
-
 // let arr = [];
 // console.log(arr);
-
 
 // const fruits = ["apple","orange","mango"];
 
@@ -238,7 +217,6 @@
 
 // console.log("x",x);
 // console.log("y",y);
-
 
 // const x = ["a","b","c"];
 
@@ -284,7 +262,6 @@
 //     gender: "male",
 // }
 
-
 // const student3 = {
 //     name: "zaw zaw",
 //     age: 15,
@@ -306,10 +283,8 @@
 // console.log(students[0]["bag"][2]);
 // console.log(students[0].bag[2]);
 
-
 // const x = 2;
 // const y = 3;
-
 
 // console.log(x+y);
 // console.log(x-y);
@@ -324,7 +299,6 @@
 // console.log(x--);
 // console.log(x);
 
-
 // let x;
 // console.log(x);
 
@@ -335,7 +309,6 @@
 // x = 7;
 
 // console.log(x);
-
 
 // let x = 5;
 // console.log(x);
@@ -356,7 +329,6 @@
 // console.log(firstName+lastName);
 // console.log(firstName+" "+lastName);
 
-
 // const weight = 101;
 // const unit = "kg";
 
@@ -367,12 +339,8 @@
 
 // console.log(x - y);
 
-
-
 // console.log(5 > 10);
 // console.log(5 < 10);
-
-
 
 // const x = 5;
 // const y = "5";
@@ -385,10 +353,8 @@
 // console.log(x == y);
 // console.log(x === y);
 
-
 // console.log(x == z);
 // console.log(x != z);
-
 
 // console.log(true ? "it is true" : "it is false");
 // console.log(false ? "it is true" : "it is false");
@@ -396,7 +362,6 @@
 // const finishDinner = false;
 
 // console.log(finishDinner ? "sar pee p" : "ma sar ya tay buu");
-
 
 // const examMark = 55;
 // const viberMark = 40;
@@ -414,17 +379,122 @@
 
 // console.log(!!!true);
 
-console.log(true ? "It's True" : "It's false");
-console.log({} ? "It's True" : "It's false");
-console.log([] ? "It's True" : "It's false");
-console.log(2 ? "It's True" : "It's false");
-console.log(1 ? "It's True" : "It's false");
-console.log(0 ? "It's True" : "It's false");
-console.log(-1 ? "It's True" : "It's false");
-console.log("" ? "It's True" : "It's false");
-console.log("a" ? "It's True" : "It's false");
-console.log(" " ? "It's True" : "It's false");
-console.log("abc" ? "It's True" : "It's false");
-console.log(null ? "It's True" : "It's false");
-console.log(undefined ? "It's True" : "It's false");
-console.log(NaN ? "It's True" : "It's false");
+// console.log(true ? "It's True" : "It's false");
+// console.log({} ? "It's True" : "It's false");
+// console.log([] ? "It's True" : "It's false");
+// console.log(2 ? "It's True" : "It's false");
+// console.log(1 ? "It's True" : "It's false");
+// console.log(0 ? "It's True" : "It's false");
+// console.log(-1 ? "It's True" : "It's false");
+// console.log("" ? "It's True" : "It's false");
+// console.log("a" ? "It's True" : "It's false");
+// console.log(" " ? "It's True" : "It's false");
+// console.log("abc" ? "It's True" : "It's false");
+// console.log(null ? "It's True" : "It's false");
+// console.log(undefined ? "It's True" : "It's false");
+// console.log(NaN ? "It's True" : "It's false");
+
+// function triangle() {
+//   console.log("*");
+//   console.log("* *");
+//   console.log("* * *");
+// }
+
+// triangle();
+// triangle();
+// triangle();
+
+// function square() {
+//   console.log("* * *");
+//   console.log("* * *");
+//   console.log("* * *");
+// }
+
+// square();
+// square();
+
+// function area(w=0, h=0) {
+//   //   console.log(w * h);
+//   console.log("w",w);
+//   console.log("h",h);
+//   return w * h;
+// }
+
+// console.log(typeof null);
+// console.log(area());
+// console.log(area(20));
+// console.log(area(null,20));
+
+// console.log(area(20, 60));
+// console.log(area(25, 65));
+// console.log(area(12, 50));
+
+// area(20,60)
+// area(25,65)
+// area(12,50)
+
+// let x;
+// console.log(x);
+
+// const records = [];
+// let recordIndex = 0;
+
+// function area(width = 0, breadth = 0) {
+//   const result = width * breadth;
+//   records[recordIndex++] = {width,breadth,result};
+//   return `${result} sqft`;
+// }
+
+// console.log(area(20, 60));
+// console.log(area(25, 65));
+// console.log(area(12, 50));
+
+// console.table(records);
+
+// 500usd to mmk ?
+// 350sgd to mmk ?
+// 200eur to mmk ?
+
+// const rates = {
+//   usd: 3650,
+//   sgd: 2850,
+//   eur: 4100,
+// };
+
+// function toMmk(amount, currency) {
+//   // currency to rate
+
+//   const rate = rates[currency];
+
+//   // amount into rate
+
+//   const result = amount * rate;
+
+//   return `${result} mmk`;
+// }
+
+// console.log(toMmk(500,"usd"));
+// console.log(toMmk(350,"sgd"));
+// console.log(toMmk(200,"eur"));
+
+// 500000mmk to ? usd
+// 275000mmk to ? sgd
+// 6000000mmk to ? eur
+
+// function toCurrency(mmkAmount, currency) {
+//   const rate = rates[currency];
+
+//   const result = mmkAmount / rate;
+
+//   return `${result} ${currency}`;
+// }
+
+// console.log(toCurrency(500000,"usd"));
+// console.log(toCurrency(250000,"sgd"));
+// console.log(toCurrency(6000000,"eur"));
+
+// home work
+
+// 500 usd to ? sgd
+// 7000 sdg to ? eur
+// 40 eur to ? usd
