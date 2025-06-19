@@ -498,3 +498,114 @@
 // 500 usd to ? sgd
 // 7000 sdg to ? eur
 // 40 eur to ? usd
+
+// business logic
+
+// function change(cash, netTotal) {
+//   return cash - netTotal;
+// }
+
+// function tax(amount, percentage = 5) {
+//   return amount * (percentage / 100);
+// }
+
+// const fruits = {
+//   apple: 500,
+//   orange: 400,
+//   mango: 1200,
+//   banana: 200,
+//   lime: 50,
+// };
+
+// const voucher = [];
+// let voucherIndex = 0;
+// let total = 0;
+
+// function buy(item, quantity) {
+//   const unitPrice = fruits[item];
+//   const cost = unitPrice * quantity;
+//   const result = {
+//     item,
+//     unitPrice,
+//     quantity,
+//     cost,
+//   };
+
+//   voucher[voucherIndex++] = result;
+//   total += cost;
+
+//   return result;
+// }
+
+// console.log(buy("apple", 3));
+// console.log(buy("mango", 2));
+// console.log(buy("lime", 5));
+
+// console.table(voucher);
+// console.log("total", total);
+// console.log("tax", tax(total, 5));
+// console.log("net total", total + tax(total, 5));
+// console.log("change", change(4400, total + tax(total, 5)),"for cash", 4400);
+
+// const x = 5;
+// const y = x + 3;
+
+// function run(){
+//     console.log("run function");
+// }
+
+// const area = function(w,b){
+//     return w * b;
+// }
+
+// console.log(area(20,60));
+
+// (function(){
+//     console.log("I'm IIFE");
+// })()
+
+// function x(){
+//     return "x"
+// }
+
+// function y(){
+//     return x();
+// }
+
+// console.log(y());
+
+// let a = "aaa"
+
+// {
+//   let x = 5;
+//   const y = 7;
+//   var z = 9;
+//   console.log(a);
+// }
+
+// console.log(z);
+// console.log(x);
+// console.log(y);
+
+// function run() {
+//   let x = 5;
+//   const y = 7;
+//   var z = 9;
+//   console.log(a);
+// }
+
+// run();
+
+// console.log(z);
+// console.log(x);
+// console.log(y);
+
+// console.log(run());
+
+// function run() {
+//   return "I'm run";
+// }
+
+// console.log(x);
+
+// const x = 5;
