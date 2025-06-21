@@ -609,3 +609,194 @@
 // console.log(x);
 
 // const x = 5;
+
+// const obj = {
+//     x : function(){
+//         return "this is x"
+//     }
+// }
+
+// console.log(obj);
+// console.log(obj.x);
+// console.log(obj.x());
+
+// console.log("hello")
+
+// const obj = {
+//   x() {
+//     return "this is x";
+//   },
+//   y() {
+//     return "this is y";
+//   },
+//   z: function () {
+//     return "this is z";
+//   },
+// };
+
+// console.log(obj);
+// console.log(obj.x());
+// console.log(obj.y());
+
+// const me = {
+//     // property
+//     name : "hein htet zan",
+//     age : 18,
+//     // method
+//     teach(){
+//         return `I can teach web development`
+//     },
+//     learn(){
+//         return `I can learn everything`
+//     },
+//     intro(){
+//         return `My name is ${this.name} and ${this.age} years old`
+//     }
+// }
+
+// console.log(me);
+// console.log(me.intro());
+
+// const condition = false;
+
+// console.log(condition ? "this is true" : "this is false");
+
+// function triangle(){
+//     console.log("*");
+//     console.log("* *");
+//     console.log("* * *");
+// }
+
+// triangle()
+// triangle()
+// triangle()
+
+// const condition = true;
+
+// if (condition) {
+//   console.log("*");
+//   console.log("* *");
+//   console.log("* * *");
+// } else {
+//   console.log("* * *");
+//   console.log("* * *");
+//   console.log("* * *");
+// }
+
+// const wakeUpHour = 6;
+
+// if (wakeUpHour > 8) {
+//   console.log("you will be punished");
+// } else {
+//   console.log("You can leave");
+// }
+
+// const pocketMoney = 50;
+// const busTicketFee = 200;
+// if (pocketMoney > busTicketFee) {
+//   console.log("you can go to school with bus");
+// } else {
+//   console.log("You can walk to school");
+// }
+
+// const requestMoney = 50;
+
+// if (requestMoney > busTicketFee * 2) {
+//   console.log("I will go to school");
+// } else {
+//   console.log("I will sleep");
+// }
+
+// function checkWakeTime(name, wakeUpHour) {
+//   if (wakeUpHour > 8) {
+//     return `${name} will be punished`;
+//   }
+//   return `${name} can leave`;
+// }
+
+// console.log(checkWakeTime("mg mg", 8));
+// console.log(checkWakeTime("aung aung", 10));
+// console.log(checkWakeTime("kyaw kyaw", 6));
+
+// function checkResult(sub, mark) {
+//   //   if (mark >= 40) {
+//   //     return `${sub} is passed`;
+//   //   }
+//   //   return `${sub} is failed`;
+
+//   // fail, passed, distention - asc
+
+//   // distention, passed, fail - desc
+
+//   if (mark < 40) {
+//     return `${sub} is failed`;
+//   } else if (mark < 80) {
+//     return `${sub} is passed`;
+//   } else if (mark >= 80) {
+//     return `${sub} is distention`;
+//   }
+//   return `${mark} is not number`
+// }
+
+// console.log(checkResult("mm", 35));
+// console.log(checkResult("eng", 60));
+// console.log(checkResult("math", 96));
+// console.log(checkResult("math", "a"));
+
+// const fruits = ["apple", "orange", "mango", "lime", "lemon", "grep"];
+
+// const student2 = {
+//   name: "Kyaw Kyaw",
+//   age: 16,
+//   gender: "male",
+// };
+
+// for (let key in student2) {
+//   console.log(key, student2[key]);
+// }
+
+// for(let el of fruits){
+//     console.log(el);
+// }
+
+// for(let i in fruits){
+//     console.log(fruits[i]);
+// }
+
+// console.log(fruits.length);
+
+// for (let i = 0; i < fruits.length; i++) {
+
+//     console.log("loop",i, fruits[i]);
+
+// //   console.log(i,"*");
+// //   console.log(i,"* *");
+// //   console.log(i,"* * *");
+// }
+
+// console.log(i);
+
+// for (let i = 0; i < 10; i++) {
+//     if (i === 5) continue;
+//     console.log("loop", i);
+// }
+
+// for (let i = 50; i > 0; i-=10) {
+//   console.log("loop", i);
+// }
+
+// for(let i=fruits.length; i > 0; i--){
+//     console.log("loop",fruits[i-1]);
+// }
+
+// const student2 = {
+//     name: "Kyaw Kyaw",
+//     age: 16,
+//     gender: "male",
+// }
+
+// const student2 = {
+//     name: "Kyaw Kyaw",
+//     age: 16,
+//     gender: "male",
+// }
