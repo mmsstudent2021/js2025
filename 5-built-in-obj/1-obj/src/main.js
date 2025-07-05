@@ -177,17 +177,141 @@ import random from "./utils/random";
 
 // console.log(Function);
 
-function run() {
-  console.log(arguments);
-  return "run fun";
-}
+// function run() {
+//   console.log(arguments);
+//   return "run fun";
+// }
 
-console.log(run.name);
-console.log(run(1,2,3,4));
+// console.log(run.name);
+// console.log(run(1,2,3,4));
 
-const area = new Function("w", "h", " return w * h");
+// const area = new Function("w", "h", " return w * h");
 // console.log(area(15,50));
 // console.dir(area.bind(null,15,50).apply());
 // console.dir(area.bind(null, 15, 50));
 // console.log(area.call(null,15,50));
 // console.log(area.name);
+
+// console.log(Array);
+
+// const arr = new Array("apple", "orange", "mango", "banana", "lemon");
+// const nums = [1, 5, 4, 6];
+// const chars = ["a", "e", "w"];
+
+// const area = function (w,h,...p) {
+//   console.log(w);
+//   console.log(h);
+//   console.log(p);
+//   // console.log(arguments);
+//   return "area"
+// };
+
+// console.log(area(15,50,"a","b","c"));
+
+// const obj = { a: "aaa", b: "bbb", c: "ccc" };
+
+// console.log(obj);
+
+// mutate
+// obj.a = "aaaaa"; // overwrite value
+// obj.d = "ddd";
+
+// console.log({...obj,d:"ddd",a:"aaaa"});
+
+// console.log(obj);
+
+// const y = {...obj};
+
+// console.log(obj);
+// console.log(y);
+
+// mutate way
+// chars.push("x");
+// chars.push("y");
+// chars.push("z");
+
+//immutable way
+// console.log([...chars,"x","y","z"]);
+
+// console.log(chars);
+
+// const x = [...nums,...chars];
+
+// console.log(nums);
+// console.log(x);
+
+// console.log(arr);
+
+// // console.log(arr.slice(1,3));
+// console.log(arr.splice(1,2,"xxx","yyy","zzz"));
+
+// console.log(arr);
+// console.log(Array.isArray(arr));
+// console.log(Array.isArray(nums));
+// console.log(Array.isArray(chars));
+// console.log(Array.isArray("hein"));
+// console.log(Array.isArray(123));
+// console.log(Array.isArray({}));
+
+// const all = arr.concat(nums,chars);
+// const arr = ["apple", "orange", "mango", "banana", "lemon"];
+
+// console.log(arr);
+// console.log(arr.includes("apple"));
+// console.log(arr.indexOf("apple"));
+// console.log(arr.includes("mango"));
+// console.log(arr.indexOf("mango"));
+// console.log(arr.includes("hein"));
+// console.log(arr.indexOf("hein"));
+
+// console.log(all);
+
+// console.log(arr.length);
+
+// console.log(arr.toString());
+// console.log(arr.join(" "));
+
+// console.log(arr.shift());
+// console.log(arr.shift());
+
+// console.log(arr.pop());
+// console.log(arr.pop());
+
+// console.log(arr.push("xxx"));
+// arr.push("yyy")
+// arr.push("zzz")
+
+// console.log(arr.push("xxx","yyy","zzz"));
+
+// arr.unshift("ccc")
+// arr.unshift("bbb")
+// arr.unshift("aaa")
+
+// console.log(arr);
+
+// function area(w, h) {
+//   return w * h;
+// }
+
+// const area = function (w, h) {
+//   return w * h;
+// };
+
+// const area = new Function("w", "h", "return w*h");
+
+// const area = (w, h) => w * h;
+
+// const area = (w, h) => {
+//   return w * h;
+// };
+
+// const run = () => "this is run";
+// const run = () => "this is run";
+
+// const run = () => {
+//   return "this is run";
+// };
+
+const run = (x) => `this is ${x}`;
+
+console.log(run("xxx"));
