@@ -1,4 +1,5 @@
 import dayjs from "dayjs";
+import random from "./utils/random";
 
 // const dayjs = require("dayjs");
 
@@ -81,4 +82,112 @@ import dayjs from "dayjs";
 
 // console.log(examDate.diff(today,"month"));
 
-console.log(Date.now());
+// console.log(Date.now());
+
+// console.log(String);
+
+// const str = new String("    min ga lar par byar   ");
+// console.log(str);
+// console.log(str.length);
+// console.log(str[4]);
+// console.log(str.toUpperCase());
+// console.log(str.toLowerCase());
+// console.log(str.substring(7,10));
+// console.log(str);
+// console.log(str.slice(7,10));
+// console.log(str);
+// console.log(str.search("lar"));
+// console.log(str.search("a"));
+// console.log(str.search("min"));
+// console.log(str.search("hein"));
+// // console.log(str.toLocaleLowerCase());
+// console.log(str.replace("par","zzz"));
+// console.log(str);
+// console.log(str.trim(),str.trim().length);
+// const num = new String("AAB");
+// console.log(num.padStart(8,"X"));
+// console.log(num.padEnd(8,"Z"));
+// const fruits = new String("apple orange mango banana");
+// // str to arr
+// console.log(fruits.split(" "));
+// console.log(fruits.split("e"));
+// console.log(fruits.split(""));
+// console.log(fruits.split(" ",3));
+
+// console.log("hello".toUpperCase());
+// console.log("hein htet zan".split(" "));
+// console.log("hello par".replace("hello","ha ha"));
+
+// console.log(String.fromCharCode(65,110,116));
+// console.log(String.fromCharCode(97));
+
+// console.log(Number);
+
+// const num = new Number(1234.5678);
+
+// console.log(num);
+// console.log(num.toString());
+// console.log(num.toFixed());
+// console.log(num.toFixed(1));
+// console.log(num.toFixed(2));
+
+// const s = new Number(2500);
+// console.log(s.toExponential());
+
+// const num = new String(105);
+// console.log(num);
+
+// const num = new Number("3500");
+// console.log(num);
+
+// console.log(Math);
+
+// const m = new Math();
+// console.log(m);
+
+// const num = 1500.3437;
+
+// console.log(num.toFixed());
+// console.log(Math.floor(num));
+// console.log(Math.ceil(num));
+
+// const randomNum = Math.random();
+// const threeDigit = randomNum * 10;
+
+// console.log(randomNum);
+// console.log(threeDigit);
+// console.log(Math.ceil(threeDigit));
+// // console.log(Math.floor(threeDigit));
+
+// console.log(random(1,5));
+// console.log(random(1,5));
+// console.log(random(1,5));
+// console.log(random(1,5));
+// console.log(random(1,5));
+
+// const weight = "101.15kg";
+// console.log(weight);
+// console.log(Number(weight));
+// console.log(parseInt(weight));
+// console.log(parseFloat(weight));
+
+// const area = function (w, h) {
+//   return w * h;
+// };
+
+// console.log(Function);
+
+function run() {
+  console.log(arguments);
+  return "run fun";
+}
+
+console.log(run.name);
+console.log(run(1,2,3,4));
+
+const area = new Function("w", "h", " return w * h");
+// console.log(area(15,50));
+// console.dir(area.bind(null,15,50).apply());
+// console.dir(area.bind(null, 15, 50));
+// console.log(area.call(null,15,50));
+// console.log(area.name);
