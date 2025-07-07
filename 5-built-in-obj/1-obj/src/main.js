@@ -1,5 +1,6 @@
 import dayjs from "dayjs";
 import random from "./utils/random";
+import products from "./data/products";
 
 // const dayjs = require("dayjs");
 
@@ -312,6 +313,169 @@ import random from "./utils/random";
 //   return "this is run";
 // };
 
-const run = (x) => `this is ${x}`;
+// const run = (x) => `this is ${x}`;
 
-console.log(run("xxx"));
+// console.log(run("xxx"));
+
+// const a = {};
+// const b = {};
+
+// console.log(a === b);
+
+// console.dir(Object);
+
+// const obj = { a: "aaa", b: "bbb", c: "ccc" };
+
+// console.log(obj);
+
+// console.log(Object.keys(obj));
+// console.log(Object.values(obj));
+
+// console.log(obj.hasOwnProperty("c"));
+// console.log(obj.hasOwnProperty("b"));
+// console.log(obj.hasOwnProperty("z"));
+
+// console.log(obj.a ? true : false);
+// console.log(obj.z ? true : false);
+
+// const area = (w, h) => w * h;
+
+// console.log(area(15,50));
+
+// const points = [34, 15, 2, 52, 19, 56, 30, 57];
+
+// console.log(points);
+
+// same purpose - filter products
+// retail for cheap product
+// retail for high rating product
+// retail for high value product
+
+// const filterArray = (arr, callback) => {
+//   const result = [];
+//   for (let el of arr) {
+//     // callback becomes condition
+//     if (callback(el)) {
+//       result.push(el);
+//     }
+//   }
+//   return result;
+// };
+
+// console.table(products);
+
+// console.table(filterArray(products, (product) => product.price < 50 ));
+// console.table(filterArray(products, (product) => product.price > 500 ));
+// console.table(filterArray(products, (product) => product.rating.rate > 4 ));
+
+// console.log(filterArray(points, (point) => point < 40));
+// console.log(filterArray(points, (point) => point > 50));
+
+// same purpose - filter students
+// good students
+// rich students
+
+// element * 2
+// element + 10
+// element % 2 => odd or even
+
+// const result = [];
+// for(let point of points){
+//     result.push(point * 2)
+// }
+// console.log(result);
+
+// const result2 = [];
+// for(let point of points){
+//     result2.push(point + 10)
+// }
+// console.log(result2);
+
+// const result3 = [];
+// for(let point of points){
+//     result3.push(point % 2 ? "Odd" : "even")
+// }
+// console.log(result3);
+
+// HOF
+// const modifyArray = function (arr, logic) {
+//   const result = [];
+//   for (let el of arr) {
+//     // ? logic
+//     result.push(logic(el));
+//   }
+//   return result;
+// };
+
+// console.table(products);
+
+// console.table(
+//   modifyArray(products, (product) => ({ ...product, price: product.price * 2 }))
+// );
+
+// console.table(
+//   modifyArray(products, (product) => ({
+//     ...product,
+//     price: product.price + 10,
+//   }))
+// );
+
+// console.table(
+//   modifyArray(products, function (product) {
+//     return { ...product, price: product.price * 2 };
+//   })
+// );
+
+// console.table(
+//   modifyArray(products, function (product) {
+//     return { ...product, price: product.price + 10 };
+//   })
+// );
+
+// console.log(
+//   modifyArray(points, function (el) {
+//     return el * 2;
+//   })
+// );
+
+// console.log(modifyArray(points, (point) => point * 2));
+
+// console.log(
+//   modifyArray(points, function (el) {
+//     return el + 10;
+//   })
+// );
+
+// console.log(
+//   modifyArray(points, function (el) {
+//     return el % 2 ? "Odd" : "even";
+//   })
+// );
+
+// const points = [34, 15, 2, 52, 19, 2, 56, 30, 57, 15, 34, 30];
+
+// console.log(points);
+
+// let total = 0;
+
+// for (let point of points) {
+//   total += point;
+// }
+
+// console.log(total);
+
+// console.log(points.reduce((pv, cv) => pv + cv, 0));
+
+// const result = [];
+
+// for (let point of points) {
+//   if (!result.includes(point)) {
+//     result.push(point);
+//   }
+// }
+
+// console.log(result);
+
+// const result = new Set(points);
+
+// console.log(result);
