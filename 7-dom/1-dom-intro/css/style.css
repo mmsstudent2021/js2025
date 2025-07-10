@@ -1,0 +1,12 @@
+.box {
+  h1 {
+    color: blue;
+    text-transform: capitalize;
+  }
+  p {
+    color: gray;
+  }
+  input{
+    text-transform: capitalize;
+  }
+}

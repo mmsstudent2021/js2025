@@ -479,3 +479,130 @@ import products from "./data/products";
 // const result = new Set(points);
 
 // console.log(result);
+
+// const arr = [];
+
+// console.log(Array.isArray(arr));
+// console.log(Array.isArray("ha ha"));
+
+// const points = [34, 15, 2, 52, 19, 2, 56, 30, 57, 15, 34, 30];
+
+// console.log(points);
+
+// for(let point of points){
+//     console.log(point);
+// }
+
+// console.log(points);
+// points.forEach(function (point, index, array) {
+//   console.log(point, index, array);
+// });
+
+// const fe = points.forEach((el, i, arr) => console.log(el, i, arr));
+// console.log(fe);
+
+// modifiedArray
+// const map = points.map((el, i, arr) => el * 2);
+// console.log(map);
+
+// const filter = points.filter((el) => el === 56);
+// console.log(filter);
+
+// const r = points.findI((el,i) => {
+//   console.log(el,i);
+//   return el === 56;
+// });
+
+// const r = points.findIndex((el,i) => {
+//   console.log(el,i);
+//   return el === 560;
+// });
+
+// console.log(r);
+
+// const total = points.reduce((pv, cv) => {
+//   console.log(pv, cv);
+//   return pv + cv;
+// },0);
+// console.log(total);
+
+// console.log(points.some(el => el > 60));
+// console.log(points.every(el => el > 0));
+
+// gt 20, total
+
+// console.log(points.filter((el) => el > 20).reduce((pv, cv) => pv + cv, 0));
+
+// add 10, only even, total
+
+// const r = points
+//   .map((el) => el + 10)
+//   .filter((el) => el % 2 === 0)
+//   .reduce((acc, cv) => acc + cv, 0);
+// console.log(r);
+
+// console.table(products);
+
+// rate > 4, add 100, total
+
+// const r = products
+// .filter((el) => el.rating.rate > 4)
+// .map((el) => ({ ...el,price : el.price + 100 }))
+// .reduce((acc,cv) => acc + cv.price ,0)
+
+// name change, limit data (title,price)
+
+// const r = products
+//   .filter((el) => el.category === "electronics")
+//   .map((el) => ({ title: `MMS ${el.title}`, price: el.price }));
+
+// id 5
+
+// console.log(products.find(el => el.id === 5));
+
+// id 5, 12
+
+// console.log(products.filter((el) => el.id === 5 || el.id === 12));
+
+// id 3,5,12,18
+
+// const filterProductId = [3, 5, 12, 18];
+// console.log(filterProductId.includes(5));
+// console.log(products.filter((el) => filterProductId.includes(el.id)));
+
+// const arr = ["aaa", "bbb", "ccc"];
+
+// // const [a, b, c] = arr;
+// const [x, y] = arr;
+
+// console.log(x);
+// console.log(y);
+
+// const obj = { a: "aaa", b: "bbb", c: "ccc" };
+
+// const { a, b} = obj;
+// const { a, b, c } = obj;
+
+// console.log(a,b);
+
+// console.log(arr[0]);
+// console.log(arr[1]);
+
+console.log(products);
+
+// console.table(
+//   products.map((el) => ({
+//     title: el.title,
+//     price: el.price,
+//     rate: el.rating.rate,
+//   }))
+// );
+
+console.table(
+  products.map(({ title, price, rating: { rate } }) => ({ title, price, rate }))
+);
+
+
+// obj => key
+
+// arr => any
