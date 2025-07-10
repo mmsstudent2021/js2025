@@ -6,7 +6,13 @@
   p {
     color: gray;
   }
-  input{
+  input {
     text-transform: capitalize;
+  }
+
+  .list {
+    /* background: #000; */
+    /* color: white; */
+    text-decoration: underline;
   }
 }
