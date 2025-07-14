@@ -6,21 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
-  <body>
-    <div id="app">
-      <h1>Area Calculator</h1>
-      <div class="result-box">
-        <p>Result : <span id="result"></span></p>
-        <button id="storeBtn">Store</button>
-        <button id="clearBtn">Clear</button>
+  <body class="p-5 lg:p-0">
+    <div
+      id="app"
+      class="p-5 w-full lg:w-[600px] rounded-lg mx-auto border border-black"
+    >
+      <h1 class="text-3xl font-bold font-serif mb-5">Area Calculator</h1>
+      <div class="flex w-full gap-3 mb-5">
+        <p
+          id="result"
+          class="grow border border-transparent bg-gray-200 rounded px-4 py-2"
+        ></p>
+        <button class="bg-black text-white rounded px-4 py-2" id="storeBtn">
+          Store
+        </button>
+        <button class="bg-black text-white rounded px-4 py-2" id="clearBtn">
+          Clear
+        </button>
       </div>
-      <div class="calc-form">
-        <input type="number" placeholder="width input" id="widthInput" />
-        <input type="number" placeholder="height input" id="heightInput" />
-        <button id="calcBtn">Calculate</button>
+      <div class="flex flex-col md:flex-row gap-3 mb-10">
+        <input
+          class="block grow border rounded px-4 py-2"
+          type="number"
+          placeholder="width input"
+          id="widthInput"
+        />
+        <input
+          class="block grow border rounded px-4 py-2"
+          type="number"
+          placeholder="height input"
+          id="heightInput"
+        />
+        <button class="bg-black text-white rounded px-4 py-2" id="calcBtn">
+          Calculate
+        </button>
       </div>
-      <ul id="lists"></ul>
+      <div>
+        <h3 class="text-xl font-bold font-serif mb-2">Calculated Records</h3>
+        <ul id="lists" class="flex flex-col gap-3">
+          <li class="border-l-4 pl-2 text-stone-400 hidden last:block">
+            There is no History
+          </li>
+        </ul>
+      </div>
     </div>
+
+    <!-- <div id="dom-ui"></div> -->
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

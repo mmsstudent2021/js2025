@@ -1,42 +1,46 @@
-import "./style.css";
+import AreaCalculator from "./classes/AreaCalculator";
+import "./style/global.css";
 
-// select
-const result = document.querySelector("#result");
-const storeBtn = document.querySelector("#storeBtn");
-const clearBtn = document.querySelector("#clearBtn");
-const inputWidth = document.querySelector("#widthInput");
-const inputHeight = document.querySelector("#heightInput");
-const calcBtn = document.querySelector("#calcBtn");
-const lists = document.querySelector("#lists");
+const ac = new AreaCalculator();
+ac.init();
 
-// handler
-const handleCalcBtn = () => {
-  // console.log("hello you click");
-  // get value
-  const width = inputWidth.valueAsNumber;
-  const height = inputHeight.valueAsNumber;
+// const domUi = document.querySelector("#dom-ui");
 
-  const area = width * height;
+// console.dir(domUi);
 
-  // set value
-  result.innerText = `${width}ft * ${height}ft = ${area} sqft`;
+// const heading = document.createElement("h1");
+// heading.innerText = "Area Calculator";
+// console.log(heading.classList);
+// heading.classList.add("text-3xl", "font-serif", "font-bold", "mb-5");
 
-  // reset input
-  inputWidth.value = "";
-  inputHeight.value = "";
-};
+// const img = document.createElement("img");
+// console.dir(img);
+// img.src = "/poe.jpg";
+// img.style.width = "200px";
+// img.style.borderRadius = "10px";
+// img.style.marginBottom = "10px";
+// img.alt = "my poe lay";
+// img.width = 200
+// img.height = 300
+// img.className = " h-40 rounded-lg";
+// img.setAttribute("src", "/poe.jpg");
+// img.setAttribute("alt", "my poe lay");
 
-const handleStoreBtn = () => {
-  lists.innerHTML += `<li>${result.innerText}</li>`;
-  result.innerText = "";
-};
+// console.log(img.getAttribute("src"));
+// console.log(img.src);
 
-const handleClearBtn = () => {
-  result.innerText = "";
-};
+// const para = document.createElement("p");
+// para.innerText =
+//   "Poe Mamhe Thar (Burmese: ပိုးမမှီသာ; born 1 May 1997) is a Burmese actress, model and physician. She made her film debut in the 2021 film Padauk Musical";
 
-// event listener
+// const link = document.createElement("a");
+// link.innerText = "MMS IT";
+// link.setAttribute("href", "https://mms-it.com");
+// link.setAttribute("target", "_blank");
 
-calcBtn.addEventListener("click", handleCalcBtn);
-storeBtn.addEventListener("click", handleStoreBtn);
-clearBtn.addEventListener("click", handleClearBtn);
+// domUi.append(heading);
+// domUi.after(img);
+// domUi.prepend(para);
+// domUi.before(link);
+
+// img.remove()
