@@ -4,6 +4,8 @@ import "./style/global.css";
 const ac = new AreaCalculator();
 ac.init();
 
+console.dir(document.querySelector("h1"));
+
 // const domUi = document.querySelector("#dom-ui");
 
 // console.dir(domUi);
