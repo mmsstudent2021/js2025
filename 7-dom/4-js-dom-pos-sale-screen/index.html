@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <main id="app" class="min-h-screen bg-white dark:bg-gray-900 flex flex-col">
+      <header
+        class="flex justify-between border-b border-gray-200 dark:border-gray-700 px-5 py-4"
+      >
+        <h1 class="font-heading font-bold dark:text-gray-200 text-xl">
+          Coo' Bakery
+        </h1>
+        <div class="flex gap-5">
+          <button
+            id="theme-toggle"
+            type="button"
+            class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg text-sm"
+          >
+            <span class="hidden size-4" id="theme-toggle-light-icon">
+              <i data-lucide="sun"></i>
+            </span>
+            <span class="hidden size-4" id="theme-toggle-dark-icon">
+              <i data-lucide="moon"></i>
+            </span>
+          </button>
+
+          <button
+            type="button"
+            class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg text-sm"
+          >
+            <span class="size-4" id="theme-toggle-dark-icon">
+              <i data-lucide="refresh-ccw"></i>
+            </span>
+          </button>
+
+          <button
+            type="button"
+            class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg text-sm"
+          >
+            <span class="size-4" id="theme-toggle-dark-icon">
+              <i data-lucide="bell-ring"></i>
+            </span>
+          </button>
+
+          <button
+            type="button"
+            class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg text-sm"
+          >
+            <span class="size-4" id="theme-toggle-dark-icon">
+              <i data-lucide="user"></i>
+            </span>
+          </button>
+        </div>
+      </header>
+      <section class="flex-1 grid grid-cols-7">
+        <div
+          class="h-full col-span-5 border-r border-gray-200 dark:border-gray-700 bg-gray-50 relative"
+        >
+          <button
+            class="size-12 bg-blue-600 rounded-full flex justify-center items-center absolute bottom-5 right-5"
+          >
+            <i class="size-5 text-white" data-lucide="plus"></i>
+          </button>
+          <div class="flex justify-between items-center p-5">
+            <h3 class="text-2xl">Sale Screen</h3>
+
+            <form>
+              <label
+                for="search"
+                class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
+                >Search</label
+              >
+              <div class="relative">
+                <div
+                  class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
+                >
+                  <i data-lucide="search" class="size-4 text-gray-500"></i>
+                </div>
+                <input
+                  type="search"
+                  id="search"
+                  class="block w-full px-4 py-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="Search"
+                  required
+                />
+              </div>
+            </form>
+          </div>
+          <div class="grid grid-cols-8 gap-5 px-5">
+            <div class="col-span-1">
+              <div id="category-list" class="flex flex-col gap-3 mb-6">
+                <button
+                  class="bg-blue-50 border text-blue-600 border-blue-400 text-sm text-end px-4 py-2 rounded-lg"
+                >
+                  All
+                </button>
+                <button
+                  class="bg-transparent border border-transparent text-sm text-end px-4 py-2 rounded-lg"
+                >
+                  Bread
+                </button>
+                <button
+                  class="bg-transparent border border-transparent text-sm text-end px-4 py-2 rounded-lg"
+                >
+                  Coffee
+                </button>
+                <button
+                  class="bg-transparent border border-transparent text-sm text-end px-4 py-2 rounded-lg"
+                >
+                  Smoothies
+                </button>
+              </div>
+              <button
+                class="bg-transparent border border-transparent text-sm text-end px-4 py-2 rounded-lg w-full flex justify-end items-center gap-2"
+              >
+                <i class="size-3" data-lucide="plus"></i>
+                <span>Create</span>
+              </button>
+            </div>
+            <div class="col-span-7">
+              <div id="product-list" class="grid grid-cols-4 gap-5">
+                <div
+                  class="product-card border border-gray-300 overflow-hidden rounded-lg bg-white"
+                >
+                  <img
+                    src="https://sallysbakingaddiction.com/wp-content/uploads/2013/04/triple-chocolate-cake-4.jpg"
+                    alt=""
+                    class="h-36 w-full object-cover"
+                  />
+                  <div class="p-4">
+                    <span
+                      class="text-xs text-blue-600 bg-blue-50 border border-blue-400 rounded px-2 py-0.5"
+                      >Cake</span
+                    >
+                    <h5 class="text-sm my-2 line-clamp-2">
+                      Berry Layered Mousse Cake Berry Layered Mousse Cake
+                    </h5>
+                    <div class="flex items-center gap-2 text-gray-500">
+                      <i data-lucide="tag" class="size-4"></i>
+                      <p class="text-sm">
+                        <span class="font-mono">16000</span>
+                        Kyat
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="h-full col-span-2 flex flex-col">
+          <h3 class="text-2xl p-5 text-end">Order Items</h3>
+          <div class="flex flex-col" id="order-list">
+            <div class="order-card border-b border-gray-300 px-5 py-3">
+              <div class="flex justify-between mb-2">
+                <p class="text-sm">Berry Layered Mousse Cake</p>
+                <div class="flex gap-1 items-center">
+                  <button class="bg-blue-50 border border-blue-400 rounded p-1">
+                    <i class="size-3 text-blue-600" data-lucide="minus"></i>
+                  </button>
+                  <p class="font-mono text-end w-5 text-sm">1</p>
+                  <button class="bg-blue-50 border border-blue-400 rounded p-1">
+                    <i class="size-3 text-blue-600" data-lucide="plus"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex justify-between text-gray-500">
+                <div class="flex gap-2 items-center">
+                  <p class="text-sm font-mono">1</p>
+                  <p class="text-sm font-mono">x</p>
+                  <p class="text-sm font-mono">10500</p>
+                </div>
+                <p class="text-sm font-mono">10500</p>
+              </div>
+            </div>
+
+            <div class="order-card border-b border-gray-300 px-5 py-3">
+              <div class="flex justify-between mb-2">
+                <p class="text-sm">Berry Layered Mousse Cake</p>
+                <div class="flex gap-1 items-center">
+                  <button class="bg-blue-50 border border-blue-400 rounded p-1">
+                    <i class="size-3 text-blue-600" data-lucide="minus"></i>
+                  </button>
+                  <p class="font-mono text-end w-5 text-sm">1</p>
+                  <button class="bg-blue-50 border border-blue-400 rounded p-1">
+                    <i class="size-3 text-blue-600" data-lucide="plus"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex justify-between text-gray-500">
+                <div class="flex gap-2 items-center">
+                  <p class="text-sm font-mono">1</p>
+                  <p class="text-sm font-mono">x</p>
+                  <p class="text-sm font-mono">10500</p>
+                </div>
+                <p class="text-sm font-mono">10500</p>
+              </div>
+            </div>
+
+            <div class="order-card border-b border-gray-300 px-5 py-3">
+              <div class="flex justify-between items-start mb-2">
+                <p class="text-sm">
+                  Berry Layered cake Berry Layered Mousse Cake
+                </p>
+                <div class="flex gap-1 items-center">
+                  <button class="bg-blue-50 border border-blue-400 rounded p-1">
+                    <i class="size-3 text-blue-600" data-lucide="minus"></i>
+                  </button>
+                  <p class="font-mono text-end w-5 text-sm">1</p>
+                  <button class="bg-blue-50 border border-blue-400 rounded p-1">
+                    <i class="size-3 text-blue-600" data-lucide="plus"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex justify-between text-gray-500">
+                <div class="flex gap-2 items-center">
+                  <p class="text-sm font-mono">1</p>
+                  <p class="text-sm font-mono">x</p>
+                  <p class="text-sm font-mono">10500</p>
+                </div>
+                <p class="text-sm font-mono">10500</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-5" id="summary">
+            <table class="w-full text-end text-sm font-mono">
+              <tbody>
+                <tr>
+                  <td class="py-1">Total :</td>
+                  <td class="py-1">10500</td>
+                </tr>
+                <tr>
+                  <td class="py-1">Tax (5%) :</td>
+                  <td class="py-1">500</td>
+                </tr>
+                <tr>
+                  <td class="py-1">Net Total :</td>
+                  <td class="py-1">10500</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="px-5 mt-auto">
+            <div class="flex justify-end gap-3 mb-3">
+              <div class="flex items-center">
+                <input
+                  id="inline-radio"
+                  type="radio"
+                  value=""
+                  name="inline-radio-group"
+                  class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                />
+                <label
+                  for="inline-radio"
+                  class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                  >Dine In</label
+                >
+              </div>
+              <div class="flex items-center">
+                <input
+                  id="inline-2-radio"
+                  type="radio"
+                  value=""
+                  name="inline-radio-group"
+                  class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                />
+                <label
+                  for="inline-2-radio"
+                  class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                  >Take Away</label
+                >
+              </div>
+            </div>
+            <button
+              type="button"
+              class="w-full mb-5 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+            >
+              Check Out
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
