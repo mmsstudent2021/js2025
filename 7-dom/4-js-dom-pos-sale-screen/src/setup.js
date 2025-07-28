@@ -10,6 +10,7 @@ import {
   Sun,
   Tag,
   User,
+  X,
 } from "lucide";
 import { themeToggleDarkIcon, themeToggleLightIcon } from "./selectors";
 
@@ -30,7 +31,8 @@ const iconSetup = () => {
       Search,
       Plus,
       Tag,
-      Minus
+      Minus,
+      X,
     },
   });
 };
