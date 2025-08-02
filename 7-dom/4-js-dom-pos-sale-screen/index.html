@@ -72,7 +72,7 @@
           <div class="flex justify-between items-center p-5">
             <h3 class="text-2xl">Sale Screen</h3>
 
-            <form>
+            <div id="search-form">
               <label
                 for="search"
                 class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
@@ -87,22 +87,17 @@
                 <input
                   type="search"
                   id="search"
+                  name="search"
                   class="block w-full px-4 py-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   placeholder="Search"
                   required
                 />
               </div>
-            </form>
+            </div>
           </div>
           <div class="grid grid-cols-6 gap-5 px-5">
             <div class="col-span-1">
-              <div id="category-list" class="flex flex-col gap-3 mb-6">
-                <button
-                  class="bg-blue-50 border text-blue-600 border-blue-400 text-sm text-end px-4 py-2 rounded-lg"
-                >
-                  All
-                </button>
-              </div>
+              <div id="category-list" class="flex flex-col gap-3 mb-6"></div>
               <button
                 data-drawer-target="create-category-drawer"
                 data-drawer-show="create-category-drawer"
@@ -113,7 +108,7 @@
                 <span>Create</span>
               </button>
             </div>
-            <div class="col-span-5">
+            <div class="col-span-5 overflow-scroll h-[680px]">
               <div id="product-list" class="grid grid-cols-3 gap-5"></div>
             </div>
           </div>
@@ -439,17 +434,19 @@
           <img
             src="https://sallysbakingaddiction.com/wp-content/uploads/2013/04/triple-chocolate-cake-4.jpg"
             alt=""
-            class="h-36 w-full object-cover"
+            class="h-36 w-full object-cover product-img"
           />
-          <div class="p-4">
-            <span
-              class="text-xs text-blue-600 bg-blue-50 border border-blue-400 rounded px-2 py-0.5 product-category-name"
-              >Cake</span
-            >
+          <div class="p-4 flex flex-col h-[140px]">
+            <div>
+              <span
+                class="text-xs text-blue-600 bg-blue-50 border border-blue-400 rounded px-2 py-0.5 product-category-name"
+                >Cake</span
+              >
+            </div>
             <h5 class="text-sm my-2 line-clamp-2 product-name">
               Berry Layered Mousse Cake Berry Layered Mousse Cake
             </h5>
-            <div class="flex items-center gap-2 text-gray-500">
+            <div class="flex items-center gap-2 text-gray-500 mt-auto">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
