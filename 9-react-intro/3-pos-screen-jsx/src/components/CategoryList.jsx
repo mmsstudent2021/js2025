@@ -1,0 +1,22 @@
+import React from "react";
+import CategoryBtn from "./CategoryBtn";
+
+const CategoryList = () => {
+  const categories = [
+    { id: 0, title: "All" },
+    { id: 1, title: "Bread" },
+    { id: 2, title: "Cake" },
+    { id: 3, title: "Coffee" },
+    { id: 4, title: "Smoothie" },
+  ];
+
+  return (
+    <div className="  flex flex-col gap-3 mb-6">
+      {categories.map((el) => (
+        <CategoryBtn category={el} key={el.id} />
+      ))}
+    </div>
+  );
+};
+
+export default CategoryList;
