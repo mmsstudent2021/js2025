@@ -1,10 +1,10 @@
-import React from "react";
 import Header from "./components/Header";
 import InventorySection from "./components/InventorySection";
 import VoucherSection from "./components/VoucherSection";
 import Counter from "./components/Counter";
 import DropBox from "./components/DropBox";
 import TaskList from "./components/TaskList";
+import Faq from "./components/Faq";
 
 const App = () => {
   return (
@@ -17,11 +17,12 @@ const App = () => {
         </div>
       </main> */}
 
-      {/* <Counter /> */}
+      <Counter />
 
       {/* <DropBox /> */}
 
-      <TaskList />
+      {/* <TaskList /> */}
+      {/* {<Faq />} */}
     </>
   );
 };

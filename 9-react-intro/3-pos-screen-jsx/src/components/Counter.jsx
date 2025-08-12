@@ -6,7 +6,18 @@ const Counter = () => {
   const handleClickAdd = () => {
     console.log("u click");
     // setX(5);
-    setX(x + 1);
+    // setX(x + 1);
+    // setX(x + 1);
+    // setX(x + 1);
+    setX((oldState) => {
+      return oldState + 1;
+    });
+    setX((oldState) => {
+      return oldState + 1;
+    });
+    setX((oldState) => {
+      return oldState + 1;
+    });
   };
 
   const handleClickSub = () => {

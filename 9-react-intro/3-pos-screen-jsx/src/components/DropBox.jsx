@@ -13,6 +13,11 @@ const DropBox = () => {
     setShow(false);
   };
 
+  const handleClickToggle = () => {
+    console.log("u toggle");
+    setShow(!show);
+  };
+
   return (
     <div className=" p-10">
       <div className=" flex gap-2 mb-3">
@@ -21,6 +26,12 @@ const DropBox = () => {
         </button>
         <button onClick={handleClickClose} className=" bg-black p-2 text-white">
           Close
+        </button>
+        <button
+          onClick={handleClickToggle}
+          className=" bg-black p-2 text-white"
+        >
+          Toggle
         </button>
       </div>
       {/* {show ? <div className=" border p-3">Hello I'm box</div> : <></>} */}
