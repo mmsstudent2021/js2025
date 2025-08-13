@@ -2,7 +2,7 @@ import { X } from "lucide-react";
 import React from "react";
 import CategoryCreateForm from "./CategoryCreateForm";
 
-const CategoryCreateDrawer = ({ openDrawer, setOpenDrawer, storeCategory }) => {
+const CategoryCreateDrawer = ({ openDrawer, setOpenDrawer }) => {
   const handleClose = () => {
     setOpenDrawer(false);
   };
@@ -16,7 +16,7 @@ const CategoryCreateDrawer = ({ openDrawer, setOpenDrawer, storeCategory }) => {
         <h3 className=" font-bold text-xl ">Create new category</h3>
         <X onClick={handleClose} />
       </div>
-      <CategoryCreateForm setOpenDrawer={setOpenDrawer} storeCategory={storeCategory} />
+      <CategoryCreateForm setOpenDrawer={setOpenDrawer} />
     </div>
   );
 };

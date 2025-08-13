@@ -2,7 +2,7 @@ import { Plus } from "lucide-react";
 import React, { useState } from "react";
 import CategoryCreateDrawer from "./CategoryCreateDrawer";
 
-const CategoryAddBtn = ({ storeCategory }) => {
+const CategoryAddBtn = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
   const handleClick = () => {
     setOpenDrawer(!openDrawer);
@@ -19,7 +19,6 @@ const CategoryAddBtn = ({ storeCategory }) => {
       </button>
 
       <CategoryCreateDrawer
-        storeCategory={storeCategory}
         openDrawer={openDrawer}
         setOpenDrawer={setOpenDrawer}
       />

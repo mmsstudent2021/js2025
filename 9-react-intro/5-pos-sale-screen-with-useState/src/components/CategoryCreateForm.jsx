@@ -2,7 +2,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { toast } from "sonner";
 
-const CategoryCreateForm = ({ storeCategory, setOpenDrawer }) => {
+const CategoryCreateForm = ({  setOpenDrawer }) => {
   //   const handleSubmit = (e) => {
   //     e.preventDefault();
   //     const formData = new FormData(e.target);
@@ -25,7 +25,7 @@ const CategoryCreateForm = ({ storeCategory, setOpenDrawer }) => {
 
   const onSubmit = (data) => {
     // console.log(data);
-    storeCategory(data.new_category_name);
+    // storeCategory(data.new_category_name);
     reset();
     toast.success("New Category is created");
     setOpenDrawer(false);
