@@ -1,0 +1,46 @@
+{
+  "fruits": [
+    {
+      "id": "1",
+      "title": "Apple",
+      "price": 500
+    },
+    {
+      "id": "3",
+      "title": "Mango Juice",
+      "price": 1500
+    },
+    {
+      "id": "239f",
+      "title": "Banana",
+      "price": 200
+    },
+    {
+      "id": "5e3b",
+      "title": "Lime",
+      "price": 250
+    }
+  ],
+  "foods": [
+    {
+      "id": "1",
+      "title": "cake"
+    },
+    {
+      "id": "2",
+      "title": "coffee"
+    }
+  ],
+  "movies": [
+    {
+      "id": "1",
+      "name": "Superman",
+      "year": 2025
+    },
+    {
+      "id": "f8e7",
+      "name": "The Dark knight",
+      "year": 2014
+    }
+  ]
+}
