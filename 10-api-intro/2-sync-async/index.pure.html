@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>XMLHttpRequest Example</title>
+  </head>
+  <body>
+    <h2>XMLHttpRequest Demo</h2>
+    <button id="loadBtn">Load Data</button>
+    <pre id="output"></pre>
+
+    <script>
+      document.getElementById("loadBtn").addEventListener("click", function () {
+        // Create a new XMLHttpRequest object
+        const xhr = new XMLHttpRequest();
+
+        // Configure it: GET request for a test API
+        xhr.open("GET", "https://jsonplaceholder.typicode.com/posts/1", true);
+
+        // Define what happens when response loads
+        xhr.onload = function () {
+          if (xhr.status === 200) {
+            document.getElementById("output").textContent = xhr.responseText;
+          } else {
+            document.getElementById("output").textContent =
+              "Error: " + xhr.status;
+          }
+        };
+
+        // Handle network errors
+        xhr.onerror = function () {
+          document.getElementById("output").textContent = "Request failed.";
+        };
+
+        // Send the request
+        xhr.send();
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>XMLHttpRequest with Promise</title>
+</head>
+<body>
+  <h2>XMLHttpRequest + Promise Demo</h2>
+  <button id="loadBtn">Load Data</button>
+  <pre id="output"></pre>
+
+  <script>
+    // Function that returns a Promise using XMLHttpRequest
+    function fetchData(url) {
+      return new Promise((resolve, reject) => {
+        const xhr = new XMLHttpRequest();
+        xhr.open("GET", url, true);
+
+        xhr.onload = () => {
+          if (xhr.status >= 200 && xhr.status < 300) {
+            resolve(xhr.responseText);
+          } else {
+            reject(new Error("Request failed. Status: " + xhr.status));
+          }
+        };
+
+        xhr.onerror = () => reject(new Error("Network error"));
+
+        xhr.send();
+      });
+    }
+
+    // Button click event
+    document.getElementById("loadBtn").addEventListener("click", () => {
+      fetchData("https://jsonplaceholder.typicode.com/posts/1")
+        .then((data) => {
+          document.getElementById("output").textContent = data;
+        })
+        .catch((err) => {
+          document.getElementById("output").textContent = err.message;
+        });
+    });
+
+    // const categories = () => {
+        
+    // }
+
+    // const products = () => {
+        
+    // }
+
+
+    // const run = () => {
+
+    //     categories()
+
+    //     products()
+        
+    // }
+
+  </script>
+</body>
+</html>
