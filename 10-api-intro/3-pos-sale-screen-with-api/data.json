@@ -1,0 +1,79 @@
+{
+  "categories": [
+    {
+      "id": "0",
+      "title": "All"
+    },
+    {
+      "id": "1",
+      "title": "Bread"
+    },
+    {
+      "id": "2",
+      "title": "Cake"
+    },
+    {
+      "id": "3",
+      "title": "Coffee"
+    },
+    {
+      "id": "4",
+      "title": "Smoothie"
+    },
+    {
+      "id": "95e6",
+      "title": "Noddle"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "category": "Bread",
+      "title": "Buttery French Morning Croissant",
+      "price": 5800,
+      "image": "/images/1.png"
+    },
+    {
+      "id": "2",
+      "category": "Bread",
+      "title": "Artisan Crusty Rye Loaf",
+      "price": 6300,
+      "image": "/images/2.png"
+    },
+    {
+      "id": "3",
+      "category": "Bread",
+      "title": "Healthy Sesame Multigrain Loaf",
+      "price": 5800,
+      "image": "/images/3.png"
+    },
+    {
+      "id": "4",
+      "category": "Bread",
+      "title": "Golden Classic Sliced Bread",
+      "price": 6400,
+      "image": "/images/4.png"
+    },
+    {
+      "id": "5033",
+      "title": "Lemon",
+      "price": "1200",
+      "category": "Cake",
+      "image": "/images/5.png"
+    },
+    {
+      "id": "ce6b",
+      "title": "Hello",
+      "price": "3000",
+      "category": "Coffee",
+      "image": "/images/5.png"
+    },
+    {
+      "id": "0a7d",
+      "title": "kkkkk",
+      "price": "50000",
+      "category": "Noddle",
+      "image": "/images/5.png"
+    }
+  ]
+}
