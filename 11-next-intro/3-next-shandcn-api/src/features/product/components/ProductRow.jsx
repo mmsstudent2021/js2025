@@ -1,15 +1,17 @@
 import { Button } from "@/components/ui/button";
 import { destroyProduct, productApiUrl } from "@/services/product";
-import { ArrowRight, Edit, Trash, Trash2 } from "lucide-react";
+import { ArrowRight, Edit, Loader2Icon, Trash, Trash2 } from "lucide-react";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { toast } from "sonner";
 import { useSWRConfig } from "swr";
 
 const ProductRow = ({ product: { id, title, category, price } }) => {
   const { mutate } = useSWRConfig();
+  const [isDeleting, setIsDeleting] = useState(false);
 
   const handleDelete = async () => {
+    setIsDeleting(true);
     try {
       const res = await destroyProduct(id);
 
@@ -24,6 +26,8 @@ const ProductRow = ({ product: { id, title, category, price } }) => {
       toast.error("Failed to delete", {
         description: e.message,
       });
+    } finally {
+      setIsDeleting(false);
     }
   };
 
@@ -35,7 +39,7 @@ const ProductRow = ({ product: { id, title, category, price } }) => {
       <td className="py-3 px-6 border-b text-right">{price}</td>
       <td className="py-3 px-6 border-b text-right flex gap-2 justify-end">
         <Button onClick={handleDelete} variant={`outline`}>
-          <Trash2 />
+          {isDeleting ? <Loader2Icon className="animate-spin" /> : <Trash2 />}
         </Button>
         <Link href={`/product/${id}/edit`}>
           <Button variant={`outline`}>

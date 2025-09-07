@@ -9,3 +9,11 @@ export const destroyProduct = (id) => {
     headers: { "Content-Type": "application/json" },
   });
 };
+
+export const storeProduct = (payload) => {
+  return fetch(productApiUrl, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload),
+  });
+};
