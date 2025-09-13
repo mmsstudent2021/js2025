@@ -23,18 +23,18 @@
   ],
   "products": [
     {
-      "id": "1",
-      "category": "Bread",
-      "title": "Buttery French Morning Croissant",
-      "price": 5800,
-      "image": "/images/1.png"
+      "title": "aaaaa",
+      "price": "1111.11",
+      "category": "Coffee",
+      "confirm": true,
+      "id": "1"
     },
     {
-      "id": "6",
-      "category": "Cake",
-      "title": "Red velvet double cheese cake",
-      "price": 10500,
-      "image": "/images/6.png"
+      "title": "bbbb",
+      "price": "222.22",
+      "category": "Bread",
+      "confirm": true,
+      "id": "6"
     },
     {
       "id": "4305",

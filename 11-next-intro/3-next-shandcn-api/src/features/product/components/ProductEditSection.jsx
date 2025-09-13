@@ -14,10 +14,16 @@ import {
 import { Checkbox } from "@/components/ui/checkbox";
 import useSWR, { useSWRConfig } from "swr";
 import { categoryApiUrl, fetchCategory } from "@/services/category";
-import { fetchProduct, productApiUrl, storeProduct } from "@/services/product";
+import {
+  fetchProduct,
+  productApiUrl,
+  storeProduct,
+  updateProduct,
+} from "@/services/product";
 import { toast } from "sonner";
 import { useParams, useRouter } from "next/navigation";
 import { Loader2Icon } from "lucide-react";
+import { useEffect } from "react";
 
 const ProductEditSection = () => {
   const router = useRouter();
@@ -37,29 +43,29 @@ const ProductEditSection = () => {
   const {
     register,
     handleSubmit,
+    setValue,
     control,
     formState: { errors, isSubmitting },
     reset,
   } = useForm({
-    defaultValues: {
-      productName: "",
-      category: "",
-      price: "",
-      confirm: false,
-    },
+    // defaultValues: {
+    //   title: "hello par",
+    //   price: 550.55,
+    //   category : "Coffee"
+    // },
   });
 
   const onSubmit = async (data) => {
     try {
-      const res = await storeProduct(data);
+      const res = await updateProduct(data, id);
 
       if (!res.ok) {
-        throw new Error("Product store api fail");
+        throw new Error("Product update api fail");
       }
 
       const json = await res.json();
 
-      toast.success("Product stored successfully");
+      toast.success("Product updated successfully");
 
       mutate(productApiUrl);
 
@@ -73,6 +79,20 @@ const ProductEditSection = () => {
       });
     }
   };
+
+  useEffect(() => {
+    console.log("section mounted", product);
+    if (product) {
+      // setValue("title", product.title);
+      // setValue("price", product.price);
+      // setValue("category", product.category);
+      reset({
+        title: product.title,
+        price: product.price,
+        category: product.category,
+      });
+    }
+  }, [product]);
 
   if (productLoading || categoryLoading) {
     return (
@@ -99,7 +119,6 @@ const ProductEditSection = () => {
               <Input
                 id="title"
                 placeholder="Enter product name"
-                defaultValue={product?.title}
                 {...register("title", {
                   required: "Product name is required",
                 })}
@@ -114,7 +133,6 @@ const ProductEditSection = () => {
               <Input
                 id="price"
                 placeholder="Enter product name"
-                defaultValue={`${product?.price?.toString()}`}
                 {...register("price", {
                   required: "Product name is required",
                 })}
@@ -126,7 +144,7 @@ const ProductEditSection = () => {
             </div>
 
             {/* Category */}
-            {/* <div className="space-y-3 mb-5">
+            <div className="space-y-3 mb-5">
               <Label>Category</Label>
               <Controller
                 name="category"
@@ -154,7 +172,7 @@ const ProductEditSection = () => {
                   {errors.category.message}
                 </p>
               )}
-            </div> */}
+            </div>
           </div>
         </div>
         <div className="">

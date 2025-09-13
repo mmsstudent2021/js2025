@@ -17,3 +17,11 @@ export const storeProduct = (payload) => {
     body: JSON.stringify(payload),
   });
 };
+
+export const updateProduct = (payload, id) => {
+  return fetch(`${productApiUrl}/${id}`, {
+    method: "PUT",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload),
+  });
+};
